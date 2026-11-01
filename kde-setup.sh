@@ -9,8 +9,6 @@ echo "Installing Necessary components..."
 echo "Installing Necessary Fonts..."
 {
     pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack ttf-dejavu ttf-liberation ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family inter-font adwaita-fonts ttf-adwaitamono-nerd --noconfirm;
-    cp -r NewSECKorean /usr/share/fonts/;
-    cp -r OneUISans /usr/share/fonts;
 }
 
 echo "Installing KDE Plasma Desktop and Essential Apps..."
@@ -54,8 +52,6 @@ echo "Installing Gaming Support..."
 
 echo "Install and Setup Extras..."
 {
-    cp -r SamsungTheme* /usr/share/wallpapers;
-    cp -r samsungtheme /usr/share/sounds/;
     pacman -S bibata-cursor-theme noto-color-emoji-fontconfig paru papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth limine-mkinitcpio-hook --noconfirm;
     papirus-folders -C adwaita;
 }
