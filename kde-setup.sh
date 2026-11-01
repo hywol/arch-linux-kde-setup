@@ -14,7 +14,7 @@ echo "Installing Necessary Fonts..."
 echo "Installing KDE Plasma Desktop and Essential Apps..."
 {
     pacman -S plasma print-manager flatpak kdialog kolourpaint okular ebook-tools kdegraphics-mobipocket gwenview qt6-imageformats kimageformats ark zip 7zip unrar unarchiver unace openssh sshfs kdeconnect kup rsync kaddressbook kalarm korganizer kmail kontact akonadi-calendar-tools kdepim-addons kaccounts-providers kwallet kwalletmanager kate python-lsp-server konsole rust clang khelpcenter keditbookmarks dolphin dolphin-plugins kio-admin ffmpegthumbs elisa kalk kclock kweather krecorder kamoso gst-plugin-qml6 gst-plugins-bad gst-plugins-base-libs gst-plugins-good libcamera-ipa libcamera libcamera-tools spectacle xdg-desktop-portal-kde xdg-desktop-portal-gtk plasma5-integration breeze5 tuned-ppd exiv2 qt6-sensors  --noconfirm;
-    pacman -S firefox libreoffice-fresh libreoffice-fresh-ko unixodbc postgresql-libs --noconfirm;
+    pacman -S firefox libreoffice-fresh libreoffice-fresh-ko unixodbc postgresql-libs thunderbird libotr hunspell-en_us --noconfirm;
     pacman -S kpat kmines knights gnuchess kmahjongg ksudoku --noconfirm;
     pacman -S fcitx5 fcitx5-hangul fcitx5-qt fcitx5-gtk fcitx5-configtool --noconfirm;
     pacman -Rnn oxygen oxygen-sounds oxygen-icons plymouth-kcm --noconfirm;
