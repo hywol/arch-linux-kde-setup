@@ -25,6 +25,7 @@ echo "Setup Desktop..."
     cp environment /etc;
     cp zram-generator.conf /etc/systemd/;
     cp limine /etc/default;
+    mkdir /etc/sddm.conf.d/;
     cp locale.conf /etc/;
     cp locale.gen /etc/;
     locale-gen;
