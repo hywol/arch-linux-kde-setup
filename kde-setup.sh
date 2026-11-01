@@ -66,17 +66,17 @@ echo "Installing Flatpak Necessary Packages..."
     flatpak install -y org.freedesktop.Platform/x86_64/25.08 org.freedesktop.Platform/x86_64/26.08 org.kde.Platform/x86_64/6.10 org.kde.Platform/x86_64/6.11 org.kde.Platform/x86_64/5.15-25.08 org.gnome.Platform/x86_64/50 org.gnome.Platform/x86_64/51;
 }
 
-echo "Setup snapper..."
-{
-    pacman -S snapper btrfs-assistant limine-snapper-sync snap-pac;
-    umount /.snapshots;
-    rm -rf /.snapshots;
-    snapper -c root create-config /;
-    btrfs subvolume delete /.snapshots;
-    rm -rf /.snapshots;
-    mkdir /.snapshots;
-    mount /.snapshots;
-}
+# echo "Setup snapper..."
+# {
+#    pacman -S snapper btrfs-assistant limine-snapper-sync snap-pac;
+#    umount /.snapshots;
+#    rm -rf /.snapshots;
+#    snapper -c root create-config /;
+#    btrfs subvolume delete /.snapshots;
+#    rm -rf /.snapshots;
+#    mkdir /.snapshots;
+#    mount /.snapshots;
+# }
 
 echo "Enabling Services..."
 {
