@@ -1,0 +1,7 @@
+KERNEL_CMDLINE[default]+=rw root=/dev/nvme0n1p2 rootflags=subvol=/@ initrd=/intel-ucode.img
+KERNEL_CMDLINE[default]+=quiet splash loglevel=3
+KERNEL_CMDLINE[default]+=intel_iommu=on i915.force_probe=!7d55 xe.force_probe=7d55 xe.enable_psr=0 xe.enable_display=1 xe.modeset=1
+
+ROOT_SUBVOLUME_PATH="@"
+ROOT_SNAPSHOTS_PATH="/.snapshots"
+ENABLE_ENROLL_LIMINE_CONFIG=yes
