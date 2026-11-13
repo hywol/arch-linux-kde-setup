@@ -48,7 +48,7 @@ echo "Installing Windows compatibility Layer..."
 
 echo "Installing Gaming Support..."
 {
-    pacman -S steam innoextract vkd3d lib32-vkd3d vulkan-intel lib32-vulkan-intel intel-media-driver lib32-gamemode gamemode gamescope mangohud --noconfirm;
+    ./gaming-support.sh;
 }
 
 echo "Install and Setup Extras..."
