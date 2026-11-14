@@ -28,6 +28,7 @@ echo "Setup Desktop..."
     mkdir /etc/sddm.conf.d/;
     mkdir /etc/skel/.config;
     cp -r etc /;
+    cp -r wallpapers /usr/share/;
     cp plasmalogin.conf /etc/;
     cp locale.conf /etc/;
     cp locale.gen /etc/;
