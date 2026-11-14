@@ -60,7 +60,8 @@ echo "Install and Setup Extras..."
     pacman -S noto-color-emoji-fontconfig paru ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth limine-mkinitcpio-hook --noconfirm;
     mkdir /usr/src/breeze-plus;
     git clone https://github.com/mjkim0727/breeze-plus /usr/src/breeze-plus;
-    sh /usr/src/breeze-plus/install-system.sh
+    sh /usr/src/breeze-plus/install-system-wide.sh
+    rm -rf /usr/src/breeze-plus;
 }
 
 echo "Setup mkinitcpio..."
@@ -93,8 +94,8 @@ echo "Enabling Services..."
     systemctl enable plasmalogin;
     systemctl enable mysql;
     systemctl enable bluetooth;
-    systemctl enable snapper-timeline.timer;
-    systemctl enable snapper-cleanup.timer;
+#    systemctl enable snapper-timeline.timer;
+#    systemctl enable snapper-cleanup.timer;
 }
 
 echo "Finished!"

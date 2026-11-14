@@ -1,3 +1,8 @@
+[Containments][23][Applets][24][Configuration][General]
+favoritesPortedToKAstats=true
+icon=start-here
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
+
 [Containments][4][Wallpaper][org.kde.image][General]
 Image=/usr/share/wallpapers/archlinux-kde/contents/images/north.png
 PreviewImage=/usr/share/wallpapers/archlinux-kde/contents/screenshot.png
