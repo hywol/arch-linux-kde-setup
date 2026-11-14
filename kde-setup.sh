@@ -27,8 +27,7 @@ echo "Setup Desktop..."
     cp limine /etc/default;
     mkdir /etc/sddm.conf.d/;
     mkdir /etc/skel/.config;
-    cp ksmserverrc /etc/skel/.config;
-    cp -r kdedefaults /etc/skel/.config;
+    cp -r etc /;
     cp locale.conf /etc/;
     cp locale.gen /etc/;
     cp /usr/share/pixmaps/archlinux-logo.svg /usr/share/icons/hicolor/scalable/apps/start-here.svg;
