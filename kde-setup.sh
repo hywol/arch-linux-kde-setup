@@ -26,8 +26,12 @@ echo "Setup Desktop..."
     cp zram-generator.conf /etc/systemd/;
     cp limine /etc/default;
     mkdir /etc/sddm.conf.d/;
+    mkdir /etc/skel/.config;
+    cp ksmserverrc /etc/skel/.config;
+    cp -r kdedefaults /etc/skel/.config;
     cp locale.conf /etc/;
     cp locale.gen /etc/;
+    cp /usr/share/pixmaps/archlinux-logo.svg /usr/share/icons/hicolor/scalable/apps/start-here.svg;
     locale-gen;
 }
 
@@ -55,6 +59,9 @@ echo "Install and Setup Extras..."
 {
     pacman -S bibata-cursor-theme noto-color-emoji-fontconfig paru papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth limine-mkinitcpio-hook --noconfirm;
     papirus-folders -C adwaita;
+    mkdir /usr/src/breeze-plus;
+    git clone https://github.com/mjkim0727/breeze-plus /usr/src/breeze-plus;
+    sh /usr/src/breeze-plus/install-system.sh
 }
 
 echo "Setup mkinitcpio..."
