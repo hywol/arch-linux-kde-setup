@@ -57,8 +57,7 @@ echo "Installing Gaming Support..."
 
 echo "Install and Setup Extras..."
 {
-    pacman -S bibata-cursor-theme noto-color-emoji-fontconfig paru papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth limine-mkinitcpio-hook --noconfirm;
-    papirus-folders -C adwaita;
+    pacman -S noto-color-emoji-fontconfig paru ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth limine-mkinitcpio-hook --noconfirm;
     mkdir /usr/src/breeze-plus;
     git clone https://github.com/mjkim0727/breeze-plus /usr/src/breeze-plus;
     sh /usr/src/breeze-plus/install-system.sh
