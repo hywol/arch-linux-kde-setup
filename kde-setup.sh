@@ -28,6 +28,7 @@ echo "Setup Desktop..."
     mkdir /etc/sddm.conf.d/;
     mkdir /etc/skel/.config;
     cp -r etc /;
+    cp plasmalogin.conf /etc/;
     cp locale.conf /etc/;
     cp locale.gen /etc/;
     cp /usr/share/pixmaps/archlinux-logo.svg /usr/share/icons/hicolor/scalable/apps/start-here.svg;
